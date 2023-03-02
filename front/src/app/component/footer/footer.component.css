@@ -1,0 +1,13 @@
+.footer {
+    background-color: #2e97b7;
+    width: 99.9vw;
+    height: 4vh;
+    margin: 3px;
+    border: 2px groove gray;
+    box-shadow: 4px 4px 6px #a4dcb9;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    bottom: 0;
+}
