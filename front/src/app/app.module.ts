@@ -23,6 +23,9 @@ import { ApiRestComponent } from './pages/api-rest/api-rest.component';
 import { MicroServicoComponent } from './pages/micro-servico/micro-servico.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CuboComponent } from './pages/html-css/cubo/cubo.component';
+import { FumacaComponent } from './pages/html-css/fumaca/fumaca.component';
+import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { LoginComponent } from './pages/login/login.component';
     ApiRestComponent,
     MicroServicoComponent,
     SobreComponent,
-    LoginComponent
+    LoginComponent,
+    CuboComponent,
+    FumacaComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,

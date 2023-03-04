@@ -1,7 +1,9 @@
 <div class="option">
     <h1 class="title">Html/Css</h1>
-    <ul >
-        <li *ngFor="let item of items">{{item.titulo}}</li>
-    </ul>
+    <div class="section">
+        <ul *ngFor="let item of items" >
+            <li><a [routerLink]="['', { outlets: {detalhes: [item.link] }} ]">{{item.label}}</a></li>
+        </ul>
+    </div>
 </div>
     

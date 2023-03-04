@@ -1,8 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink} from '@angular/router';
+import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { Action } from 'rxjs/internal/scheduler/Action';
-import { HomeComponent } from 'src/app/pages/home/home.component';
 
 @Component({
   selector: 'app-header',

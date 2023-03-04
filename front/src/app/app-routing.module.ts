@@ -8,6 +8,9 @@ import { JavaComponent } from './pages/java/java.component';
 import { MicroServicoComponent } from './pages/micro-servico/micro-servico.component';
 import { ReactComponent } from './pages/react/react.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { CuboComponent } from './pages/html-css/cubo/cubo.component';
+import { FumacaComponent } from './pages/html-css/fumaca/fumaca.component';
+import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.component';
 
 const routes: Routes = [
   {
@@ -18,6 +21,9 @@ const routes: Routes = [
     path: 'htmlcss',
     component: HtmlCssComponent
   },
+    {path: 'htmlcss-cubo', component: CuboComponent, outlet: 'detalhes'}, 
+    {path: 'htmlcss-fumaca', component: FumacaComponent, outlet: 'detalhes'},
+    {path: 'htmlcss-calculadora', component: CalculadoraComponent, outlet: 'detalhes'},
   {
     path: 'angular',
     component: AngularComponent

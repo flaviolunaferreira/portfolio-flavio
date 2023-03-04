@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-html-css',
@@ -7,6 +7,24 @@ import { Component } from '@angular/core';
 })
 export class HtmlCssComponent {
 
-  items: { titulo: string; link: string; }[] | undefined;
+  items!: { label: string; link: string; }[];
+
+  ngOnInit() {
+
+    this.items = [
+      {
+        label: 'cubo',
+        link: 'htmlcss-cubo'
+      },
+      {
+        label: 'Fumaça',
+        link: 'htmlcss-fumaca'
+      },
+      {
+        label: 'Calculadora',
+        link: 'htmlcss-calculadora'
+      }
+    ]
+  }
 
 }
