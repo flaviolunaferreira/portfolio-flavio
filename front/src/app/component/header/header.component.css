@@ -1,49 +1,6 @@
-.header {
-    background-color: #2e97b7;
-    width: 99.9vw;
-    height: 7vh;
-    margin: 3px;
-    border: 2px groove gray;
-    box-shadow: 4px 4px 6px #a4dcb9;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    top: 0;
-}
-
-.info {
-    width: 25%;
-    height: 100%;
-}
-
-.option {
-    width: 60%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.close {
-    width: 15%;
-    height: 100%;
-}
-
-ul {
+.coyote {
+    width: 30%;
+    padding: 0 15rem 0 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-li {
-    color: white;
-    font-size: 26px;
-    text-decoration: none;
-    list-style-type: none;
-    cursor: pointer;
-}
-
-#theCoyote {
-    padding: 5px;
-    width: 10%;
 }

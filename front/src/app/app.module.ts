@@ -1,22 +1,55 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+import { MenubarModule } from 'primeng/menubar';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { SidebarModule } from 'primeng/sidebar';
+
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './component/header/header.component';
 import { BodyComponent } from './component/body/body.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { HtmlCssComponent } from './pages/html-css/html-css.component';
+import { JavaComponent } from './pages/java/java.component';
+import { ReactComponent } from './pages/react/react.component';
+import { AngularComponent } from './pages/angular/angular.component';
+import { ApiRestComponent } from './pages/api-rest/api-rest.component';
+import { MicroServicoComponent } from './pages/micro-servico/micro-servico.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    HtmlCssComponent,
+    JavaComponent,
+    ReactComponent,
+    AngularComponent,
+    ApiRestComponent,
+    MicroServicoComponent,
+    SobreComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule,
+    MenubarModule,
+    InputTextModule,
+    BrowserAnimationsModule,
+    ButtonModule,
+    AppRoutingModule,
+    CardModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
