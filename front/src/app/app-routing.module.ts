@@ -11,6 +11,8 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 import { CuboComponent } from './pages/html-css/cubo/cubo.component';
 import { FumacaComponent } from './pages/html-css/fumaca/fumaca.component';
 import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.component';
+import { SpinnerComponent } from './pages/html-css/spinner/spinner.component';
+import { AlbumComponent } from './pages/html-css/album/album.component';
 
 const routes: Routes = [
   {
@@ -21,9 +23,11 @@ const routes: Routes = [
     path: 'htmlcss',
     component: HtmlCssComponent
   },
-    {path: 'htmlcss-cubo', component: CuboComponent, outlet: 'detalhes'}, 
-    {path: 'htmlcss-fumaca', component: FumacaComponent, outlet: 'detalhes'},
-    {path: 'htmlcss-calculadora', component: CalculadoraComponent, outlet: 'detalhes'},
+    { path: 'htmlcss-cubo', component: CuboComponent, outlet: 'detalhes' }, 
+    { path: 'htmlcss-fumaca', component: FumacaComponent, outlet: 'detalhes' },
+    { path: 'htmlcss-calculadora', component: CalculadoraComponent, outlet: 'detalhes' },
+    { path: 'htmlcss-spinner', component: SpinnerComponent, outlet: 'detalhes' },
+    { path: 'htmlcss-album', component: AlbumComponent, outlet: 'detalhes' },
   {
     path: 'angular',
     component: AngularComponent

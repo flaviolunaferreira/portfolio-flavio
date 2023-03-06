@@ -26,6 +26,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { CuboComponent } from './pages/html-css/cubo/cubo.component';
 import { FumacaComponent } from './pages/html-css/fumaca/fumaca.component';
 import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.component';
+import { SpinnerComponent } from './pages/html-css/spinner/spinner.component';
+import { AlbumComponent } from './pages/html-css/album/album.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.c
     LoginComponent,
     CuboComponent,
     FumacaComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    SpinnerComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,

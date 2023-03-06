@@ -13,6 +13,14 @@ export class HtmlCssComponent {
 
     this.items = [
       {
+        label: 'Album',
+        link: 'htmlcss-album'
+      },
+      {
+        label: 'Calculadora',
+        link: 'htmlcss-calculadora'
+      },
+      {
         label: 'cubo',
         link: 'htmlcss-cubo'
       },
@@ -21,9 +29,9 @@ export class HtmlCssComponent {
         link: 'htmlcss-fumaca'
       },
       {
-        label: 'Calculadora',
-        link: 'htmlcss-calculadora'
-      }
+        label: 'Spinner',
+        link: 'htmlcss-spinner'
+      },
     ]
   }
 

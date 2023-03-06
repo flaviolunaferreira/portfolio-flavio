@@ -18,6 +18,10 @@ export class HeaderComponent {
         routerLink: ['/']
       },
       {
+        label: 'Estudo',
+        icon: 'pi pi-book'
+      },
+      {
         label: 'Projetos',
         icon: 'pi pi-folder-open',
         items: [
@@ -46,6 +50,10 @@ export class HeaderComponent {
             routerLink: ['/microservico']
           }
         ]
+      },
+      {
+        label: 'Gráficos',
+        icon: 'pi pi-chart-bar'
       },
       {
         label: 'Sobre',
