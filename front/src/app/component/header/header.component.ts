@@ -18,8 +18,9 @@ export class HeaderComponent {
         routerLink: ['/']
       },
       {
-        label: 'Estudo',
-        icon: 'pi pi-book'
+        label: 'Estudos',
+        icon: 'pi pi-book',
+        routerLink: ['/estudo']
       },
       {
         label: 'Projetos',
