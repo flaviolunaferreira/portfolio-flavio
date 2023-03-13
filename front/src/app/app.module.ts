@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from "@angular/common/http"
 
 import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
@@ -28,6 +29,7 @@ import { FumacaComponent } from './pages/html-css/fumaca/fumaca.component';
 import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.component';
 import { SpinnerComponent } from './pages/html-css/spinner/spinner.component';
 import { AlbumComponent } from './pages/html-css/album/album.component';
+import { EstudoComponent } from './pages/estudo/estudo.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { AlbumComponent } from './pages/html-css/album/album.component';
     FumacaComponent,
     CalculadoraComponent,
     SpinnerComponent,
-    AlbumComponent
+    AlbumComponent,
+    EstudoComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ import { AlbumComponent } from './pages/html-css/album/album.component';
     ButtonModule,
     AppRoutingModule,
     CardModule,
-    SidebarModule
+    SidebarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

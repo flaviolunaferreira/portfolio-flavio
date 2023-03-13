@@ -1,5 +1,6 @@
 package the.coyote.back.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,7 +19,7 @@ public class swaggerConfig {
 	
 	   @Bean
 	    Docket api() {
-	        Predicate<RequestHandler> basePackage = RequestHandlerSelectors.basePackage("dataa.eleger.controladores");
+	        Predicate<RequestHandler> basePackage = RequestHandlerSelectors.basePackage("the.coyote.back.controller");
 	        Predicate<String> apiUrls = PathSelectors.ant("/api/**");
 	        return new Docket(DocumentationType.SWAGGER_2).select().apis(basePackage)
 	                .paths(apiUrls).build();
