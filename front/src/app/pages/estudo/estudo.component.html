@@ -1,8 +1,11 @@
 <div class="option">
   <h1 class="title">Estudos</h1>
+  <div class="btns">
+</div>
+
   <div class="section">
       <ul *ngFor="let item of items" >
-          <li>{{item.name}}</li>
+        <li [routerLink]="['', { outlets: {detalhes: [item.link] }} ]">{{item.label}}</li>
       </ul>
   </div>
 </div>

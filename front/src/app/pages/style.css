@@ -19,6 +19,20 @@
     height: 85%;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgb(29, 29, 29);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(lightgray, gray, black, gray, lightgray);
+  border-radius: 20px;
+  border: 3px solid gray;
+}
+
 ul {
     padding: 10%;
     list-style-type: none;
@@ -56,7 +70,7 @@ li:hover {
 .title {
     display: flex;
     justify-content: center;
-    background: linear-gradient(black, gray, white, gray, black);
+    background: linear-gradient(black, gray, darkgray, lightgray, white, lightgray, darkgray, gray, black);
     align-items: center;
     width: 100%;
     height: 15%;

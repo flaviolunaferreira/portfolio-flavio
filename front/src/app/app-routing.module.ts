@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularComponent } from './pages/angular/angular.component';
+
 import { ApiRestComponent } from './pages/api-rest/api-rest.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HtmlCssComponent} from './pages/html-css/html-css.component';
@@ -14,6 +15,9 @@ import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.c
 import { SpinnerComponent } from './pages/html-css/spinner/spinner.component';
 import { AlbumComponent } from './pages/html-css/album/album.component';
 import { EstudoComponent } from './pages/estudo/estudo.component';
+import { NewItemComponent } from './pages/estudo/new-item/new-item.component';
+import { SeeItemComponent } from './pages/estudo/see-item/see-item.component';
+import { ListItemComponent } from './pages/estudo/list-item/list-item.component';
 
 const routes: Routes = [
   {
@@ -24,6 +28,9 @@ const routes: Routes = [
     path: 'estudo',
     component: EstudoComponent
   },
+    {path: 'new-item', component: NewItemComponent, outlet: 'detalhes' },
+    {path: 'see-item', component: SeeItemComponent, outlet: 'detalhes' },
+    {path: 'list-items', component: ListItemComponent, outlet: 'detalhes' },
   {
     path: 'htmlcss',
     component: HtmlCssComponent

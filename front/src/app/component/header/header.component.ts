@@ -20,7 +20,7 @@ export class HeaderComponent {
       {
         label: 'Estudos',
         icon: 'pi pi-book',
-        routerLink: ['/estudo']
+        routerLink: ['/estudo'],
       },
       {
         label: 'Projetos',

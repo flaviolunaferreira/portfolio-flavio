@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { find } from 'rxjs';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Stack } from 'src/app/model/Stack.model';
 import { StackService } from 'src/app/service/stack.service';
 
@@ -10,18 +10,23 @@ import { StackService } from 'src/app/service/stack.service';
 })
 export class EstudoComponent {
 
-  items: Stack[] = []
+  items: {label: string; link: string;}[] = [];
 
   ngOnInit(): void {
-    this.findAll();
-    console.log(this.findAll())
+      this.findAll();
   }
 
-  constructor(private service:StackService) {}
+  constructor(private service: StackService, private router: Router) { }
 
   findAll() {
     this.service.findAll().subscribe(resp => {
-      this.items = resp;
+      if (resp.length < 1) {
+        this.items = [{label: "Novo", link: "new-item"}]
+      } else {
+        resp.forEach( x => {
+          this.items.push({label: x.name.toString(), link: "list-items"})
+        })
+      }
     })
   }
 

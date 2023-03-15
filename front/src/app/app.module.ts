@@ -9,6 +9,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { SidebarModule } from 'primeng/sidebar';
+import { TableModule } from 'primeng/table';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,6 +31,10 @@ import { CalculadoraComponent } from './pages/html-css/calculadora/calculadora.c
 import { SpinnerComponent } from './pages/html-css/spinner/spinner.component';
 import { AlbumComponent } from './pages/html-css/album/album.component';
 import { EstudoComponent } from './pages/estudo/estudo.component';
+import { NewItemComponent } from './pages/estudo/new-item/new-item.component';
+import { ListItemComponent } from './pages/estudo/list-item/list-item.component';
+import { SeeItemComponent } from './pages/estudo/see-item/see-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -51,7 +56,10 @@ import { EstudoComponent } from './pages/estudo/estudo.component';
     CalculadoraComponent,
     SpinnerComponent,
     AlbumComponent,
-    EstudoComponent
+    EstudoComponent,
+    NewItemComponent,
+    ListItemComponent,
+    SeeItemComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +71,10 @@ import { EstudoComponent } from './pages/estudo/estudo.component';
     AppRoutingModule,
     CardModule,
     SidebarModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

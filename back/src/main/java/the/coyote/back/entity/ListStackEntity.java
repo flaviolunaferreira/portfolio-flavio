@@ -1,20 +1,20 @@
 package the.coyote.back.entity;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.NotNull;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,19 +24,24 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class StackEntity {
+public class ListStackEntity {
+	
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idStack;
+	private Long idListStack;
 	
-	@NotNull
 	private String name;
 	
 	private String description;
 	
-	@OneToMany(mappedBy = "stackEntity")
-	private List<ListStackEntity> listStackEntity = new ArrayList<>();	
+	private String referency;
+		
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name = "idStack")
+	private StackEntity stackEntity;
 	
 	@CreatedBy
 	private String createdBy;
@@ -45,20 +50,15 @@ public class StackEntity {
 	private LocalDateTime createdDLocalDateTime;
 	
 	@LastModifiedBy
-	private String modifieldString;
+	private String lastmodifieldString;
 	
 	@LastModifiedDate
-	private LocalDateTime lasLocalDateTime;
+	private LocalDateTime lastLocalDateTime;
+
 	
-	public StackEntity(Long idStack, String name, String description) {
-		this.idStack = idStack;
+	public ListStackEntity(String name, String description, String referency) {
 		this.name = name;
 		this.description = description;
+		this.referency = referency;
 	}
-	
-	public StackEntity(String name, String description) {
-		this.name = name;
-		this.description = description;
-	}
-	
 }
